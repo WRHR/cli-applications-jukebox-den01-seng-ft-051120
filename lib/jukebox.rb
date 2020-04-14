@@ -34,7 +34,16 @@ end
 def run 
   puts "Please enter a command:"
   input = gets.strip
-  while input != "exit"
+  while input != "exit" do 
+    if input == "list"
+      list(songs)
+    elsif input == "play"
+      play(songs)
+    elsif input == "help"
+      help
+    end
+  end
   
+  exit
   
 end
