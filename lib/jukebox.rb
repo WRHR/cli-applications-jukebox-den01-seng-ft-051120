@@ -42,7 +42,7 @@ def run(songs)
     elsif input == "help"
       help
     else
-      puts "Invalid commad"
+      puts "Invalid commad, enter 'help' for commands"
     end
   end
   
