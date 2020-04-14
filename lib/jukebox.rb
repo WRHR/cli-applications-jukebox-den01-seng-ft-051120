@@ -7,6 +7,16 @@ def help
   puts "- exit : exits this program"
 end
 
-def list 
+def list(songs)
+  i = 0 
+  while i < songs.length
+    puts "#{i + 1}. #{songs[i]}"
+    i += 1
+  end
+end
+
+def play(songs)
+  puts "Please enter a song name or number:"
+  user_input = gets.strip
   
 end
