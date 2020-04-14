@@ -20,7 +20,10 @@ def play(songs)
   user_input = gets.strip
   if (1..9).include?(user_input.to_i)
     puts "Playing #{songs[user_input.to_i - 1]}"
-  elsif songs.include?()
+  elsif songs.find{|song| song == user_input}
+    puts "Playing #{song}"
+  else
+    puts "Invalid input, please try again"
   end
 end
 
