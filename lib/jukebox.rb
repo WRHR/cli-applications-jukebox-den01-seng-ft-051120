@@ -41,6 +41,8 @@ def run
       play(songs)
     elsif input == "help"
       help
+    else
+      puts "Invalid commad"
     end
   end
   
