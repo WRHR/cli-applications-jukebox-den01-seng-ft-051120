@@ -34,7 +34,7 @@ end
 def run 
   puts "Please enter a command:"
   input = gets.strip
-  while input != "exit" do 
+  while input != "exit" do |input|
     if input == "list"
       list(songs)
     elsif input == "play"
